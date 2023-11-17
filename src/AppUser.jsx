@@ -40,7 +40,7 @@ export default function AppUser() {
         name: nombre,
         email: correo,
         password: password,
-        phone: phone,
+        phone_number: phone,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -108,7 +108,7 @@ export default function AppUser() {
           />
           <br />
           <button className="btn btn-primary mt-3" type="submit">
-            Agregar Usuario
+            Registrar Usuario
           </button>
         </form>
       </div>
@@ -120,7 +120,7 @@ export default function AppUser() {
               <h2 className="card-title">{post.name}</h2>
               <h2 className="card-title">{post.email}</h2>
               <h2 className="card-title">{post.password}</h2>
-              <h2 className="card-title">{post.phone}</h2>
+              <h2 className="card-title">{post.phone_number}</h2>
               <div className="d-grid d-sm-flex justify-content-sm-end">
                 <button
                   type="button"
